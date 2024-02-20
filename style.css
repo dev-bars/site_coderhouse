@@ -1,0 +1,34 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*/
+
+body {
+    background-color: black;
+    color: aliceblue;
+    }
+
+
+.cortextoverde {
+    color: #D1E500;
+    overflow: ;
+}
+
+.cortextovinza {
+    color: #BEBEBE;
+}
+
+.botaoverde {
+    background-color: #D1E500;
+    color: black ;
+    border-radius: 4px;
+    width: 197.13px;
+    height: 58px;
+}
+
+.empresas {
+    text-decoration: none;
+}
