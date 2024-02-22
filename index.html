@@ -6,34 +6,38 @@
     <title>Projeto - Coderhouse</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section class="navbar">
-        <div><img src="imagens/logo-coderhouse.svg" alt="logo da coderhouse"></div>
+<header>
+    <section class="navbar"> <!--1 mudei de div para a, os links ficam juntos mesmo tendo a classe navbar com space around -->
         <div>
-            <nav>
-                <ol>
-                    <li>Cursos</li>
-                    <li>Serviços</li>
-                    <li>Contato</li>
-                </ol>
+            <img src="imagens/logo-coderhouse.svg" alt="logo da coderhouse">
+        </div>
+
+        <div>
+            <nav class="navbar">
+              <a href="">Cursos</a>
+              <a href="">Cursos</a> 
+              <a href="">Cursos</a>
             </nav>
         </div>
     </section>
+</header>
 
     <main class="cursos">
         <div>
-            <h1>
-                Cursos online e ao vivo para <span class="cortextoverde">transformar sua realidade</span>em
+            <h1 class="textocentro"> 
+                Cursos online e ao vivo para <br><span class="cortextoverde">transformar sua realidade</span> <br>em
                 tempo recorde
             </h1>
         </div>
-        <div>
-            <p>Aulas online e ao vivo ministradas por referências do mercado digital, com foco
+        <div> <!--2 Não consegui colocar font Inter no css body-->
+            <p class="textocentro">Aulas online e ao vivo ministradas por referências do mercado digital, com foco
                 100% prático, mentorias personalizadas e acesso a uma comunidade de +280.000
                 estudantes.</p>
         </div>
-        <div>
-            <button type="button" class="botaoverde">Veja todos os cursos</button>
+        <div> <!--3criei o id #botaocenter mas não consigo alinhar botao ao centro-->
+            <button type="button" class="botaoverde" id="botaocenter">Veja todos os cursos</button>
         </div>
     </main>
 
@@ -57,26 +61,24 @@
     </section>
     -->
 
-    <section class="empresas">
+    <section class="empresas" >
         <div>
-            <p>Cursos e Carreiras oficialmente certificados pela/p>
+            <p class="textocentro">Cursos e Carreiras oficialmente certificados pela</p>
         </div>
-        <div>
-            <nav>
-                <ol>
-                    <li><img src="imagens/empresa-parceira1.svg" alt="logotipo da empresa parceira1"></li>
-                    <li><img src="imagens/empresa-parceira2.svg" alt="logotipo da empresa parceira2"></li>
-                    <li><img src="imagens/empresa-parceira3.svg" alt="logotipo da empresa parceira3"></li>
-                    <li><img src="imagens/empresa-parceira4.svg" alt="logotipo da empresa parceira4"></li>
-                </ol>
+        <div class="navbar"> <!--5mesmo problema 1, não está aplicando espaço around e itens estão desalinhados-->           
+                    <span><img src="imagens/empresa-parceira1.svg" alt="logotipo da empresa parceira1"><//span>
+                    <span><img src="imagens/empresa-parceira2.svg" alt="logotipo da empresa parceira2"><//span>
+                    <span><img src="imagens/empresa-parceira3.svg" alt="logotipo da empresa parceira3"><//span>
+                    <span><img src="imagens/empresa-parceira4.svg" alt="logotipo da empresa parceira4"><//span>
+               
             </nav>
         </div>
         <div>
-            <p class="cortextoverde"> Conheça mais sobre as empresas que nos certificam</p>
+            <p class="cortextoverde textocentro"> Conheça mais sobre as empresas que nos certificam</p>
         </div>
     </section>
 
-    <section>
+    <section class="servicos"> <!--Nesta aba de serviços não estou sabendo como colocar os elementos (imagens) ao lado esquerdo e o escrito ao lado direito dentro de uma caixa. No figma este section está na aba servico-1-->
         <div>
             <img src="imagens/div.roundedgreen.png" alt="icone verde">
             <img src="imagens/div.line.png" alt="linha">
