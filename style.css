@@ -39,7 +39,7 @@ p {
     border-radius: 4px;
     width: 197.13px;
     height: 58px;
-}
+    }
 
 .empresas {
     list-style: none;
@@ -51,11 +51,18 @@ p {
 
 .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-#botaocenter {
-       align-items: center;
+.nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaocenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
