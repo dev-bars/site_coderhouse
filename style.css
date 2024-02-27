@@ -27,6 +27,13 @@ p {
     
 }
 
+.alinhamentologo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 123px;
+}
 
 .textocentro {
     text-align: center;
@@ -53,7 +60,20 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+    /*gap: 20px;*/
+    width: 400px;
+ }
+
+.navbar a {
+       color: #FFF;
+      }
+
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 .nav_list {
     display: flex;
@@ -66,3 +86,41 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.servicos {
+    display: flex;
+    gap: 10px;
+}
+
+.servicos #alinhaimagem{
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: row;
+   justify-content:space-around;
+   gap: 40px;
+    width: 632px;
+    height: 266;
+    border-radius: 20px;
+   }
+
+.servicos #alinhaimagem img{
+    
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 20px;
+    height: 130px;
+    }
+
+    .cursos {
+        margin: 86px;
+    }
+
+    .designform {
+        background-color: rgb(56, 56, 56);
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        height: 480px;
+        border-radius: 20px;
+       }
