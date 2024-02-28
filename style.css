@@ -6,11 +6,13 @@
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 255, 255);
     font-family: Inter;
-    }
+        }
 
 
 .cortextoverde {
@@ -40,6 +42,10 @@ p {
     margin: 20px 200px 20px 200px;
 }
 
+.margembaixo40 {
+    padding-bottom: 40px;
+}
+
 .botaoverde {
     background-color: #D1E500;
     color: black ;
@@ -62,6 +68,7 @@ p {
     align-items: center;
     /*gap: 20px;*/
     width: 400px;
+    padding: 20px;
  }
 
 .navbar a {
@@ -99,7 +106,7 @@ p {
    justify-content:space-around;
    gap: 40px;
     width: 632px;
-    height: 266;
+    height: 180px;
     border-radius: 20px;
    }
 
@@ -110,6 +117,11 @@ p {
     margin-bottom: 20px;
     width: 20px;
     height: 130px;
+    }
+
+    .tamanhoimg {
+        width: 400px;
+        height: 400px;
     }
 
     .cursos {
@@ -124,3 +136,19 @@ p {
         height: 480px;
         border-radius: 20px;
        }
+
+       .designform #botaocentra{
+        align-items: center;
+        justify-content: center;
+       }
+
+       .form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+           }
+
+       .container {
+        display: flex;
+       }    
