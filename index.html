@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Coderhouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header>
-    <section class="section">
+    <section class="logo">
         <div>
             <img src="imagens/logo-coderhouse.svg" alt="logo da coderhouse">
         </div>
@@ -62,132 +63,104 @@
             <h5 class="cortextoverde textocentro margembaixo40"> Conheça mais sobre as empresas que nos certificam</h5></a>
         </div>
     </section>
+   
 
-    <!--
-    <section class="servicos"> 
-        <div id="alinhaimagem">
-             <img src="imagens/line.png" alt="linha">
-        <div>
 
-        <div>
-            <h2>
-                <p class="cortextoverde">Serviços de Desenvolvimento Profissional</p>
-            </h2>
-            <h3>
-                <p class="cortextovinza">Nossa equipe trabalhará com você para entender seus objetivos
-                    profissionais e melhorar as suas soft skills.</p>
-            </h3>
-            <h4>
-                <p>Busca de oportunidades</p>
-            </h4>
+    <section class="gridservices">
+        <div class="service1">
+            <section class="container"> 
+                <div id="blocoservico">
+                    <img src="imagens/line.png" alt="linha">
+                    <div>
+                    <h3 class="cortextoverde">Desenvolvimento Profissional</h3>
+                    <h5 class="cortextovinza">Nossa equipe trabalhará com você para entender seus objetivos profissionais e melhorar as suas soft skills.</h5>
+                    <h10>Busca de oportunidades</h10>
+                </div>
+             </section>
         </div>
-    </section>
-    
-    <br>
 
-    <section class="servicos">
-        <div id="alinhaimagem">
-             <img src="imagens/line.png" alt="linha">
-        <div>
-
-        <div>
-            <h2>
-                <p class="cortextoverde">Serviços de Desenvolvimento Profissional</p>
-            </h2>
-            <h3>
-                <p class="cortextovinza">Nossa equipe trabalhará com você para entender seus objetivos
-                    profissionais e melhorar as suas soft skills.</p>
-            </h3>
-            <h4>
-                <p>Busca de oportunidades</p>
-            </h4>
+        <div class="service2">
+            <section class="container"> 
+                <div id="blocoservico">
+                    <img src="imagens/line.png" alt="linha">
+                    <div>
+                    <h3 class="cortextoverde">Professores especialistas</h3>
+                    <h5 class="cortextovinza">Aprenda interagindo com os líderes das empresas de tecnologia mais inovadoras do mundo.</h5>
+                    <h10>Busca de oportunidades</h10>
+                </div>
+             </section>
         </div>
-    </section>
 
-
-    
-<section>
-        <div>
+        <div class="imgservice">
             <img src="imagens/imagem-servico.png" alt="imagem de um computador com aluno estudando">
         </div>
-    </section>
+</section>    
 
--->
-    ---------
+<div class="space"></div>
 
-    <!--<div class="container">-->
-        <!--Entendi o uso do container e criei a classe, a questão é que de um lado fic duas section e do outro a section da imagem-->
-    <section class="servicos"> 
-        <div id="alinhaimagem">
-            <img src="imagens/line.png" alt="linha">
-        
-            <div>
-            <h2>
-            <p class="cortextoverde">Serviços de Desenvolvimento Profissional</p>
-            </h2>
-            
-            <h3>
-            <p class="cortextovinza">Nossa equipe trabalhará com você para entender seus objetivos
-            profissionais e melhorar as suas soft skills.</p>
-            </h3>
-            <h4>
-            <p>Busca de oportunidades</p>
-            </h4>
-        </div>
-    </section>
-    <br>
-    
-    
-    <section class="servicos"> 
-        <div id="alinhaimagem">
-            <img src="imagens/line.png" alt="linha">
-            <div>
-            <h2>
-            <p class="cortextoverde">Serviços de Desenvolvimento Profissional</p>
-            </h2>
-            <h3>
-            <p class="cortextovinza">Nossa equipe trabalhará com você para entender seus objetivos
-            profissionais e melhorar as suas soft skills.</p>
-            </h3>
-            <h4>
-            <p>Busca de oportunidades</p>
-            </h4>
-        </div>
-    </section>        
-    
-    <section>
-        <div>
-            <img class="tamanhoimg" src="imagens/imagem-servico.png" alt="imagem de um computador com aluno estudando">
-        </div>
-    </section>
-
-<br>
-    
-
----------
-
-    <!-- Aquiserá a section avaliacao
-    <section>
-
-    </section>
---> 
 
 <section class="form">
-        <div>
-        <form class="designform">
-            <p>Nome</p>
-            <input type="text" value="Insira seu nome completo"> <!--Como apagar o texto quando clica na caixa?-->
-            
+    <div class="containerform">
+        <div><h3 class="cortextoverde alinhamentologo">Vem com agente</h3>
+    <form class="row g-3">
+        <div class="col">
+        Nome:<input type="text" class="form-control" placeholder="Insira seu nome" aria-label="First name">
+        </div>
 
-            <p>Telefone</p>
-            <input type="number" value="1188888888">  <!--DUVIDA Aqui não consegui colcoar texto, só n-->
+     
+      
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">E-mail:</label>
+        <input type="email" class="form-control" placeholder="Seu e-mail">
+      </div>
 
-            <p>Mensagem</p>
-            <textarea cols="30" rows="10">Como podemos ajudar? 
-            </textarea> <!--aqui não consegui colocar o texto em value-->
-            <button type="button" class="botaoverde">Enviar</button> <!--Como alinhar botao centro-->
-        </form>
-    </section>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Telefone:</label>
+        <input type="number" class="form-control" id="inputAddress2" placeholder="(xx)xxxxx-xxxx">
+      </div>
+  
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Ex-aluno</label>
+        <select id="inputState" class="form-select">
+          <option>Sim</option>
+          <option selected>Não</option>
+        </select>
+      </div>
+     
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Desejo receber novidades Coder
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="botaoverde">Enviar</button>
+      </div>
+    </form>
+</div>
+</section>
 
+<footer class="footer">
+
+    <ul>
+        <li id="black">Educação</li>
+        <li>Programação</li>
+        <li>Design UX/UI</li>
+    </ul>
+
+    <ul>
+        <li id="black">Coders</li>
+        <li>Experiência de estudantes</li>
+        <li>Plataforma</li>
+    </ul>
+
+    <ul>
+        <li id="black">Sobre nós</li>
+        <li>Quem somos</li>
+        <li>Imprensa</li>
+    </ul>
+</footer>
 </body>
 </html>
