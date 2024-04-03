@@ -140,6 +140,7 @@ p {
 
 .gridservices {
   display: grid;
+  grid-template-columns: 3fr 2fr;
   grid-template-areas:
     'service1 imgservice'
     'service2 imgservice';
