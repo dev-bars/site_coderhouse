@@ -127,14 +127,13 @@ p {
   display: flex;
 }
 
-.container #blocoservico {
+.container .blocoservico {
   background-color: rgb(56, 56, 56);
   display: flex;
   justify-content: space-around;
   padding: 20px;
   gap: 40px;
-  width: 632px;
-  height: 180px;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -145,7 +144,7 @@ p {
     'service1 imgservice'
     'service2 imgservice';
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 80px;
   gap: 20px;
 }
@@ -210,13 +209,54 @@ p {
   max-width: 350px;
   border-radius: 20px;
   padding: 20px;
-  /*     display: flex;
-    background-color: rgb(34, 34, 34);
-    height: 100%;
-    max-width: 350px;
-    border-radius: 20px;
-    color: white;
-    padding: 20px; */
+}
+
+@layer circles {
+  .circles {
+    position: relative;
+  }
+
+  .yellow-circle {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: #d1e500 solid 2px;
+    border-radius: 50%;
+  }
+
+  .yellow-circle::before {
+    width: 16px;
+    height: 16px;
+    background-color: #d1e500;
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+  }
+
+  .white-circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    bottom: 0;
+    left: 6px;
+    border-radius: 50%;
+  }
+
+  .circles::after {
+    width: 1px;
+    /* height: 100%; */
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    height: calc(100% - 24px);
+  }
 }
 
 /*RESPONSIVIDADE*/
@@ -259,7 +299,7 @@ p {
     padding-bottom: 20px;
   }
 
-  .container #blocoservico {
+  .container .blocoservico {
     background-color: rgb(56, 56, 56);
     display: flex;
     align-items: center;
